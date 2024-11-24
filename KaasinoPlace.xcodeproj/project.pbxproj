@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -193,7 +193,6 @@
 				};
 			};
 			buildConfigurationList = F4D5C6662C83170700CA81FB /* Build configuration list for PBXProject "KaasinoPlace" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -201,6 +200,7 @@
 				Base,
 			);
 			mainGroup = F4D5C6622C83170700CA81FB;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = F4D5C66C2C83170700CA81FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

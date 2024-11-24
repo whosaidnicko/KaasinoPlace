@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4ADBB472CF37051002C197D /* KumarOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4ADBB462CF37051002C197D /* KumarOne-Regular.ttf */; };
+		F4ADBB492CF3A14B002C197D /* kaasinoBg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F4ADBB482CF3A14B002C197D /* kaasinoBg.mp3 */; };
+		F4D5C66F2C83170700CA81FB /* KaasinoPlaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C66E2C83170700CA81FB /* KaasinoPlaceApp.swift */; };
+		F4D5C6732C83170900CA81FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D5C6722C83170900CA81FB /* Assets.xcassets */; };
+		F4D5C6772C83170900CA81FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D5C6762C83170900CA81FB /* Preview Assets.xcassets */; };
+		F4D5C67E2C8318D900CA81FB /* LoadingViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C67D2C8318D900CA81FB /* LoadingViewCard.swift */; };
+		F4D5C6802C837F6A00CA81FB /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C67F2C837F6A00CA81FB /* MainMenu.swift */; };
+		F4D5C6852C83955800CA81FB /* UserStorageGameClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6842C83955800CA81FB /* UserStorageGameClass.swift */; };
+		F4D5C6872C83B51600CA81FB /* SetUpProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6862C83B51600CA81FB /* SetUpProfileView.swift */; };
+		F4D5C6892C845FE700CA81FB /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6882C845FE700CA81FB /* ButtonStyle.swift */; };
+		F4D5C68C2C84FFAC00CA81FB /* FreeRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C68B2C84FFAC00CA81FB /* FreeRouletteView.swift */; };
+		F4D5C68E2C8500AE00CA81FB /* GoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C68D2C8500AE00CA81FB /* GoldView.swift */; };
+		F4D5C6902C85017A00CA81FB /* BacklBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C68F2C85017A00CA81FB /* BacklBtn.swift */; };
+		F4D5C6982C85DF5E00CA81FB /* AlertUserWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6972C85DF5E00CA81FB /* AlertUserWin.swift */; };
+		F4D5C69B2C85EDB700CA81FB /* GamesChooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C69A2C85EDB700CA81FB /* GamesChooseView.swift */; };
+		F4D5C69D2C85F03B00CA81FB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C69C2C85F03B00CA81FB /* SettingsView.swift */; };
+		F4D5C6A12C86D37A00CA81FB /* RuleEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6A02C86D37A00CA81FB /* RuleEnum.swift */; };
+		F4D5C6A32C86D42600CA81FB /* RuleCasGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6A22C86D42600CA81FB /* RuleCasGameView.swift */; };
+		F4D5C6A62C86D86800CA81FB /* KubikendrieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6A52C86D86800CA81FB /* KubikendrieView.swift */; };
+		F4D5C6A82C8761D600CA81FB /* MoneyAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6A72C8761D600CA81FB /* MoneyAlert.swift */; };
+		F4D5C6AB2C884D1600CA81FB /* BlackjackCardsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6AA2C884D1500CA81FB /* BlackjackCardsGame.swift */; };
+		F4D5C6AD2C884F0500CA81FB /* BjcardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D5C6AC2C884F0500CA81FB /* BjcardModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4ADBB462CF37051002C197D /* KumarOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KumarOne-Regular.ttf"; sourceTree = "<group>"; };
+		F4ADBB482CF3A14B002C197D /* kaasinoBg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kaasinoBg.mp3; sourceTree = "<group>"; };
+		F4D5C66B2C83170700CA81FB /* KaasinoPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaasinoPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D5C66E2C83170700CA81FB /* KaasinoPlaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaasinoPlaceApp.swift; sourceTree = "<group>"; };
+		F4D5C6722C83170900CA81FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4D5C6742C83170900CA81FB /* KaasinoPlace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KaasinoPlace.entitlements; sourceTree = "<group>"; };
+		F4D5C6762C83170900CA81FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4D5C67D2C8318D900CA81FB /* LoadingViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewCard.swift; sourceTree = "<group>"; };
+		F4D5C67F2C837F6A00CA81FB /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		F4D5C6832C838A6300CA81FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F4D5C6842C83955800CA81FB /* UserStorageGameClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorageGameClass.swift; sourceTree = "<group>"; };
+		F4D5C6862C83B51600CA81FB /* SetUpProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpProfileView.swift; sourceTree = "<group>"; };
+		F4D5C6882C845FE700CA81FB /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		F4D5C68B2C84FFAC00CA81FB /* FreeRouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeRouletteView.swift; sourceTree = "<group>"; };
+		F4D5C68D2C8500AE00CA81FB /* GoldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldView.swift; sourceTree = "<group>"; };
+		F4D5C68F2C85017A00CA81FB /* BacklBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklBtn.swift; sourceTree = "<group>"; };
+		F4D5C6972C85DF5E00CA81FB /* AlertUserWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUserWin.swift; sourceTree = "<group>"; };
+		F4D5C69A2C85EDB700CA81FB /* GamesChooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesChooseView.swift; sourceTree = "<group>"; };
+		F4D5C69C2C85F03B00CA81FB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F4D5C6A02C86D37A00CA81FB /* RuleEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleEnum.swift; sourceTree = "<group>"; };
+		F4D5C6A22C86D42600CA81FB /* RuleCasGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleCasGameView.swift; sourceTree = "<group>"; };
+		F4D5C6A52C86D86800CA81FB /* KubikendrieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KubikendrieView.swift; sourceTree = "<group>"; };
+		F4D5C6A72C8761D600CA81FB /* MoneyAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyAlert.swift; sourceTree = "<group>"; };
+		F4D5C6AA2C884D1500CA81FB /* BlackjackCardsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackjackCardsGame.swift; sourceTree = "<group>"; };
+		F4D5C6AC2C884F0500CA81FB /* BjcardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BjcardModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4D5C6682C83170700CA81FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4D5C6622C83170700CA81FB = {
+			isa = PBXGroup;
+			children = (
+				F4D5C66D2C83170700CA81FB /* KaasinoPlace */,
+				F4D5C66C2C83170700CA81FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4D5C66C2C83170700CA81FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4D5C66B2C83170700CA81FB /* KaasinoPlace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4D5C66D2C83170700CA81FB /* KaasinoPlace */ = {
+			isa = PBXGroup;
+			children = (
+				F4ADBB462CF37051002C197D /* KumarOne-Regular.ttf */,
+				F4D5C6A92C884C8600CA81FB /* Bj21Game */,
+				F4D5C6A42C86D85C00CA81FB /* Kubiki */,
+				F4D5C6992C85EDAD00CA81FB /* Games */,
+				F4D5C68A2C84FF9F00CA81FB /* Roulette */,
+				F4D5C6832C838A6300CA81FB /* Info.plist */,
+				F4D5C66E2C83170700CA81FB /* KaasinoPlaceApp.swift */,
+				F4D5C67D2C8318D900CA81FB /* LoadingViewCard.swift */,
+				F4D5C6722C83170900CA81FB /* Assets.xcassets */,
+				F4D5C6742C83170900CA81FB /* KaasinoPlace.entitlements */,
+				F4D5C6752C83170900CA81FB /* Preview Content */,
+				F4D5C67F2C837F6A00CA81FB /* MainMenu.swift */,
+				F4D5C6842C83955800CA81FB /* UserStorageGameClass.swift */,
+				F4D5C6862C83B51600CA81FB /* SetUpProfileView.swift */,
+				F4D5C6882C845FE700CA81FB /* ButtonStyle.swift */,
+				F4D5C68D2C8500AE00CA81FB /* GoldView.swift */,
+				F4D5C68F2C85017A00CA81FB /* BacklBtn.swift */,
+				F4D5C6972C85DF5E00CA81FB /* AlertUserWin.swift */,
+				F4D5C69C2C85F03B00CA81FB /* SettingsView.swift */,
+				F4D5C6A72C8761D600CA81FB /* MoneyAlert.swift */,
+				F4ADBB482CF3A14B002C197D /* kaasinoBg.mp3 */,
+			);
+			path = KaasinoPlace;
+			sourceTree = "<group>";
+		};
+		F4D5C6752C83170900CA81FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4D5C6762C83170900CA81FB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4D5C68A2C84FF9F00CA81FB /* Roulette */ = {
+			isa = PBXGroup;
+			children = (
+				F4D5C68B2C84FFAC00CA81FB /* FreeRouletteView.swift */,
+			);
+			path = Roulette;
+			sourceTree = "<group>";
+		};
+		F4D5C6992C85EDAD00CA81FB /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				F4D5C69A2C85EDB700CA81FB /* GamesChooseView.swift */,
+				F4D5C6A02C86D37A00CA81FB /* RuleEnum.swift */,
+				F4D5C6A22C86D42600CA81FB /* RuleCasGameView.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		F4D5C6A42C86D85C00CA81FB /* Kubiki */ = {
+			isa = PBXGroup;
+			children = (
+				F4D5C6A52C86D86800CA81FB /* KubikendrieView.swift */,
+			);
+			path = Kubiki;
+			sourceTree = "<group>";
+		};
+		F4D5C6A92C884C8600CA81FB /* Bj21Game */ = {
+			isa = PBXGroup;
+			children = (
+				F4D5C6AA2C884D1500CA81FB /* BlackjackCardsGame.swift */,
+				F4D5C6AC2C884F0500CA81FB /* BjcardModel.swift */,
+			);
+			path = Bj21Game;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4D5C66A2C83170700CA81FB /* KaasinoPlace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D5C67A2C83170900CA81FB /* Build configuration list for PBXNativeTarget "KaasinoPlace" */;
+			buildPhases = (
+				F4D5C6672C83170700CA81FB /* Sources */,
+				F4D5C6682C83170700CA81FB /* Frameworks */,
+				F4D5C6692C83170700CA81FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaasinoPlace;
+			productName = JackKas;
+			productReference = F4D5C66B2C83170700CA81FB /* KaasinoPlace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4D5C6632C83170700CA81FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F4D5C66A2C83170700CA81FB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = F4D5C6662C83170700CA81FB /* Build configuration list for PBXProject "KaasinoPlace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4D5C6622C83170700CA81FB;
+			productRefGroup = F4D5C66C2C83170700CA81FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4D5C66A2C83170700CA81FB /* KaasinoPlace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4D5C6692C83170700CA81FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D5C6772C83170900CA81FB /* Preview Assets.xcassets in Resources */,
+				F4D5C6732C83170900CA81FB /* Assets.xcassets in Resources */,
+				F4ADBB472CF37051002C197D /* KumarOne-Regular.ttf in Resources */,
+				F4ADBB492CF3A14B002C197D /* kaasinoBg.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4D5C6672C83170700CA81FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D5C66F2C83170700CA81FB /* KaasinoPlaceApp.swift in Sources */,
+				F4D5C6872C83B51600CA81FB /* SetUpProfileView.swift in Sources */,
+				F4D5C6902C85017A00CA81FB /* BacklBtn.swift in Sources */,
+				F4D5C6AD2C884F0500CA81FB /* BjcardModel.swift in Sources */,
+				F4D5C69B2C85EDB700CA81FB /* GamesChooseView.swift in Sources */,
+				F4D5C6A32C86D42600CA81FB /* RuleCasGameView.swift in Sources */,
+				F4D5C68E2C8500AE00CA81FB /* GoldView.swift in Sources */,
+				F4D5C6852C83955800CA81FB /* UserStorageGameClass.swift in Sources */,
+				F4D5C68C2C84FFAC00CA81FB /* FreeRouletteView.swift in Sources */,
+				F4D5C6A12C86D37A00CA81FB /* RuleEnum.swift in Sources */,
+				F4D5C6892C845FE700CA81FB /* ButtonStyle.swift in Sources */,
+				F4D5C6802C837F6A00CA81FB /* MainMenu.swift in Sources */,
+				F4D5C6A82C8761D600CA81FB /* MoneyAlert.swift in Sources */,
+				F4D5C69D2C85F03B00CA81FB /* SettingsView.swift in Sources */,
+				F4D5C6A62C86D86800CA81FB /* KubikendrieView.swift in Sources */,
+				F4D5C6982C85DF5E00CA81FB /* AlertUserWin.swift in Sources */,
+				F4D5C6AB2C884D1600CA81FB /* BlackjackCardsGame.swift in Sources */,
+				F4D5C67E2C8318D900CA81FB /* LoadingViewCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F4D5C6782C83170900CA81FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4D5C6792C83170900CA81FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F4D5C67B2C83170900CA81FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KaasinoPlace/KaasinoPlace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KaasinoPlace/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KaasinoPlace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KaasinoPlace;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ka.koefe.gpire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F4D5C67C2C83170900CA81FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KaasinoPlace/KaasinoPlace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KaasinoPlace/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KaasinoPlace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KaasinoPlace;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ka.koefe.gpire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4D5C6662C83170700CA81FB /* Build configuration list for PBXProject "KaasinoPlace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D5C6782C83170900CA81FB /* Debug */,
+				F4D5C6792C83170900CA81FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4D5C67A2C83170900CA81FB /* Build configuration list for PBXNativeTarget "KaasinoPlace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D5C67B2C83170900CA81FB /* Debug */,
+				F4D5C67C2C83170900CA81FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4D5C6632C83170700CA81FB /* Project object */;
+}

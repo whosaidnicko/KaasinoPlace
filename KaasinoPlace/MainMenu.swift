@@ -23,6 +23,7 @@ struct MainMenu: View {
             Color.init(hex: "#18191E")
                 .ignoresSafeArea()
             
+            
             VStack {
                 HStack {
                     self.leftBar()
@@ -40,7 +41,8 @@ struct MainMenu: View {
                     self.rightRouletteWithCooldown()
                         .offset(x: 10)
                 }
-                .padding(.top, 40)
+                .padding(.top, 22)
+            
                 VStack(spacing: 32) {
                     NavigationLink {
                         GamesChooseView()

@@ -13,6 +13,7 @@ import AVFoundation
 final class UserStorageGameClass: ObservableObject {
     static var shared: UserStorageGameClass = UserStorageGameClass()
     
+    @Published var loadingGoing: Bool = true 
     @AppStorage("currentExperience") internal var currentExperince: Double = 0 {
         didSet {
             if self.currentExperince >= 2000 {

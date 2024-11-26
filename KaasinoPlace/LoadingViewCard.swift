@@ -18,67 +18,74 @@ struct LoadingViewCard: View {
     
     var body: some View {
         ZStack {
-                NavigationLink("", 
+                NavigationLink("",
                                destination: viewDestination(), isActive: $navigate)
           
             Color.init(hex: "#18191E")
                 .ignoresSafeArea()
             
-            VStack {
-               Spacer()
-                
-                ZStack {
-                    ForEach(cards.indices.reversed(), id: \.self) { index in
-                        Image(index > 9 ? (showCard ? cards[index] : "backOblojk") : "backOblojk")
-                            .resizable()
-                            .frame(width: 39.16, height: 58)
-                            .rotation3DEffect(
-                                .degrees( index > 9  && self.showCard ? 360 : 0),
-                                                      axis: (x: 0.0, y: 1, z: 0)
-                            )
-                            .offset(x: index > 9  && animate ? -UIScreen.main.bounds.width - 145  + ( CGFloat(index * 45)) :  CGFloat( 8 * index),
-                                    y: index > 9  && animate ? -UIScreen.main.bounds.height / 2 : 0 )
-                            .animation(.easeInOut(duration: 0.5).delay(TimeInterval(Double(index) * 0.1)), value: self.animate)
-                        
-                            
-                            .animation(.easeInOut.delay(TimeInterval(Double(index) * 0.1)), value: self.showCard)
-
-                        
-                    }
-                }
-                .offset(x: -60)
-                .padding(.bottom)
-            }
-        }
-//        .adaptModifre()
-        .onAppear() {
-            
-            for card in 1...10 {
-                cards.append(String(card).appending("c"))
-            }
-            
-            for character in "LOADING" {
-                cards.append(String(character))
-            }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                animate = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                    showCard = true
+           
+                VStack {
+                    Spacer()
                     
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                        showCard = false
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                            animate = false
+                    ZStack {
+                        ForEach(cards.indices.reversed(), id: \.self) { index in
+                            Image(index > 9 ? (showCard ? cards[index] : "backOblojk") : "backOblojk")
+                                .resizable()
+                                .frame(width: 39.16, height: 58)
+                                .rotation3DEffect(
+                                    .degrees( index > 9  && self.showCard ? 360 : 0),
+                                    axis: (x: 0.0, y: 1, z: 0)
+                                )
+                                .offset(x: index > 9  && animate ? -UIScreen.main.bounds.width - 145  + ( CGFloat(index * 45)) :  CGFloat( 8 * index),
+                                        y: index > 9  && animate ? -UIScreen.main.bounds.height / 2 : 0 )
+                                .animation(.easeInOut(duration: 0.5).delay(TimeInterval(Double(index) * 0.1)), value: self.animate)
                             
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                                self.navigate = true
+                            
+                                .animation(.easeInOut.delay(TimeInterval(Double(index) * 0.1)), value: self.showCard)
+                            
+                            
+                        }
+                    }
+                    .offset(x: -60)
+                    .padding(.bottom)
+                    
+                }
+                .onAppear() {
+                    
+                    for card in 1...10 {
+                        cards.append(String(card).appending("c"))
+                    }
+                    
+                    for character in "LOADING" {
+                        cards.append(String(character))
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        animate = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                            showCard = true
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                showCard = false
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    animate = false
+                                    
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                                        self.navigate = true
+                                    }
+                                }
                             }
                         }
                     }
                 }
-            }
+                
+          
         }
-    }
+        
+            
+        .fixlibhjesde()
+        
+            }
     func viewDestination() -> AnyView  {
         if UserDefaults.standard.value(forKey: "passed") != nil {
            return AnyView(MainMenu())
@@ -88,3 +95,49 @@ struct LoadingViewCard: View {
     }
 }
 
+struct SpecialLoadingView: View {
+    @State private var animationOffset: CGFloat = -50
+    @State private var isAnimating = false
+    
+    var body: some View {
+        ZStack {
+            // Background
+            Color.black.opacity(0.85)
+                .ignoresSafeArea()
+            
+            // Bouncing shapes
+            HStack(spacing: 10) {
+                ForEach(0..<5) { index in
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(
+                            LinearGradient(
+                                gradient: Gradient(colors: [randomColor(), randomColor()]),
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .frame(width: 30, height: 50)
+                        .offset(y: animationOffset)
+                        .animation(
+                            Animation.easeInOut(duration: 0.6)
+                                .delay(0.2 * Double(index))
+                                .repeatForever(autoreverses: true),
+                            value: animationOffset
+                        )
+                }
+            }
+        }
+        .onAppear {
+            animationOffset = 50
+            isAnimating = true
+        }
+    }
+    private func randomColor() -> Color {
+            Color(
+                red: .random(in: 0.4...1),
+                green: .random(in: 0.4...1),
+                blue: .random(in: 0.4...1)
+            )
+        }
+    
+}
